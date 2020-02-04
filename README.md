@@ -3,3 +3,4 @@
 - Language: Kotlin
 - GraphQL
 - Apache Camel
+- Todo: RabbitMQ integration
