@@ -16,6 +16,7 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <camel.version>3.0.0</camel.version>
     </properties>
 
     <dependencies>
@@ -77,22 +78,36 @@
         <dependency>
             <groupId>org.apache.camel</groupId>
             <artifactId>camel-spring-boot</artifactId>
-            <version>3.0.0</version>
+            <version>${camel.version}</version>
         </dependency>
+
+        <!-- Camel Components -->
         <dependency>
         <groupId>org.apache.camel</groupId>
         <artifactId>camel-graphql</artifactId>
-        <version>3.0.0</version>
+        <version>${camel.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.camel</groupId>
             <artifactId>camel-direct</artifactId>
-            <version>3.0.0</version>
+            <version>${camel.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.camel</groupId>
             <artifactId>camel-http</artifactId>
-            <version>3.0.0</version>
+            <version>${camel.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-rabbitmq</artifactId>
+            <version>${camel.version}</version>
+        </dependency>
+
+        <!-- Jackson-Camel -->
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-jackson</artifactId>
+            <version>${camel.version}</version>
         </dependency>
 
         <!-- RabbitMQ -->
