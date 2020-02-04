@@ -1,7 +1,6 @@
 package blu.spring.kotlinql.services
 
 import blu.spring.kotlinql.model.Account
-import blu.spring.kotlinql.model.Person
 import blu.spring.kotlinql.repositories.AccountRepository
 import org.springframework.stereotype.Service
 import java.util.*
