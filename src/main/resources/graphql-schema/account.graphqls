@@ -1,0 +1,14 @@
+type Account {
+    accountName: String
+    creationDate: String
+    id: ID!
+}
+
+extend type Query {
+    getAccount(id: ID!): Account
+    getAccounts(count: Int!): [Account]
+}
+
+extend type Mutation {
+    createAccount(accountName: String!): Account
+}

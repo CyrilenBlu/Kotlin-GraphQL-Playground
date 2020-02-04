@@ -1,0 +1,14 @@
+mutation {
+    addAccount(personAccountNumber: "7ef64831-14e5-4129-a699-b6dd2ce594d5", accountId: 2 ) {
+        id,
+        name,
+        surname,
+        accountNumber,
+        age,
+        accounts {
+            id,
+            accountName,
+            creationDate
+        }
+    }
+}

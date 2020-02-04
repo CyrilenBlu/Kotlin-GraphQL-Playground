@@ -1,0 +1,7 @@
+query {
+    getAccounts(count: 10) {
+        id,
+        accountName,
+        creationDate
+    }
+}

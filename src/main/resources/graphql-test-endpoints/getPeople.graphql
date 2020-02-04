@@ -1,0 +1,14 @@
+query {
+    getPeople(count: 10) {
+        id,
+        name,
+        surname,
+        accountNumber,
+        age,
+        accounts {
+            id,
+            accountName,
+            creationDate
+        }
+    }
+}

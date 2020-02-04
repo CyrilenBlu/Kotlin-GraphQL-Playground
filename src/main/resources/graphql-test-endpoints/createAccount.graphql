@@ -1,0 +1,7 @@
+mutation {
+    createAccount(accountName: "Cheque") {
+        id,
+        accountName,
+        creationDate
+    }
+}

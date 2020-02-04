@@ -1,0 +1,13 @@
+mutation {
+    createPerson(name: "Luke", surname: "Petzer", age: 20) {
+        id,
+        name,
+        surname,
+        accountNumber,
+        accounts {
+            id,
+            accountName,
+            creationDate
+        }
+    }
+}
