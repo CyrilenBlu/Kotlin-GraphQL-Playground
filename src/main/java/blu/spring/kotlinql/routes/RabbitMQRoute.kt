@@ -14,6 +14,7 @@ class RabbitMQRoute : RouteBuilder() {
                 .id("rabbitQ1")
                 .marshal(jsonDataFormat)
                 .to("rabbitmq://localhost:5672/blurabbit.exhange?queue=rabbitq1.queue&autoDelete=false")
+                .to("log:exchange")
                 .end()
     }
 }
