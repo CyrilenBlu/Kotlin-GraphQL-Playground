@@ -1,15 +1,15 @@
 pipeline {
     agent any
     stages {
-        stage('Gradle build') {
+        stage('Maven build') {
             steps {
                 script {
                     echo 'Building...'
                     if (isUnix()) {
-                        sh 'gradle clean build --info'
+                        sh 'mvn clean install --info'
                     }
                     else {
-                        bat 'gradle clean build --info'
+                        bat 'mvn clean install --info'
                     }
                 }
             }
