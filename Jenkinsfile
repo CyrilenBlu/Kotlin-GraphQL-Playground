@@ -9,16 +9,16 @@ pipeline {
                 script {
                     echo 'Building...'
                     if (isUnix()) {
-                        sh 'mvn clean install --info'
+                        sh 'mvn clean install'
                     }
                     else {
-                        bat 'mvn clean install --info'
+                        bat 'mvn clean install'
                     }
                 }
             }
         }
 
-        stage('Gradle deploy') {
+        stage('Maven deploy') {
             steps {
                 sh 'echo todo'
             }
